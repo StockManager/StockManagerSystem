@@ -9,6 +9,9 @@
 #ifndef SMMecro_h
 #define SMMecro_h
 
+#pragma mark - 用户
+#define UserName @"UserName"
+
 
 
 #endif /* SMMecro_h */

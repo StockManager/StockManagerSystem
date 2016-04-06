@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		8B55F0BFAAD2F46A6F21393C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B165BA0801DBDD961B03C54F /* libPods.a */; };
+		B5476EB71CB5517600BCDBA9 /* SMStockTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B5476EB51CB5517600BCDBA9 /* SMStockTableViewCell.m */; };
+		B5476EB81CB5517600BCDBA9 /* SMStockTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5476EB61CB5517600BCDBA9 /* SMStockTableViewCell.xib */; };
+		B578B56F1CB4B4E000076E49 /* SMAcountsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B578B56E1CB4B4E000076E49 /* SMAcountsVC.m */; };
+		B578B5721CB4B51300076E49 /* SMStockManagerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B578B5711CB4B51300076E49 /* SMStockManagerVC.m */; };
 		B584796B1CA8D3F700C30FC9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B584796A1CA8D3F700C30FC9 /* main.m */; };
 		B584796E1CA8D3F700C30FC9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B584796D1CA8D3F700C30FC9 /* AppDelegate.m */; };
 		B58479761CA8D3F700C30FC9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B58479751CA8D3F700C30FC9 /* Assets.xcassets */; };
@@ -22,6 +26,7 @@
 		B58479EB1CA8FB3800C30FC9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B58479E91CA8FB3800C30FC9 /* Main.storyboard */; };
 		B58479EE1CA8FD5600C30FC9 /* SMRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B58479ED1CA8FD5600C30FC9 /* SMRootViewController.m */; };
 		B58479F11CA9007F00C30FC9 /* SMGlobalUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = B58479F01CA9007F00C30FC9 /* SMGlobalUnit.m */; };
+		B5AE9F181CB3F871007ED036 /* SMLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5AE9F171CB3F871007ED036 /* SMLoginViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +49,13 @@
 /* Begin PBXFileReference section */
 		0ABC10A814756C6E4687C86B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		B165BA0801DBDD961B03C54F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5476EB41CB5517600BCDBA9 /* SMStockTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMStockTableViewCell.h; sourceTree = "<group>"; };
+		B5476EB51CB5517600BCDBA9 /* SMStockTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMStockTableViewCell.m; sourceTree = "<group>"; };
+		B5476EB61CB5517600BCDBA9 /* SMStockTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SMStockTableViewCell.xib; sourceTree = "<group>"; };
+		B578B56D1CB4B4E000076E49 /* SMAcountsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMAcountsVC.h; sourceTree = "<group>"; };
+		B578B56E1CB4B4E000076E49 /* SMAcountsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMAcountsVC.m; sourceTree = "<group>"; };
+		B578B5701CB4B51300076E49 /* SMStockManagerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMStockManagerVC.h; sourceTree = "<group>"; };
+		B578B5711CB4B51300076E49 /* SMStockManagerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMStockManagerVC.m; sourceTree = "<group>"; };
 		B58479661CA8D3F700C30FC9 /* StockManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StockManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B584796A1CA8D3F700C30FC9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B584796C1CA8D3F700C30FC9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -68,6 +80,8 @@
 		B58479EF1CA9007F00C30FC9 /* SMGlobalUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMGlobalUnit.h; sourceTree = "<group>"; };
 		B58479F01CA9007F00C30FC9 /* SMGlobalUnit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMGlobalUnit.m; sourceTree = "<group>"; };
 		B58479F21CA90AF600C30FC9 /* SMMecro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMMecro.h; sourceTree = "<group>"; };
+		B5AE9F161CB3F871007ED036 /* SMLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMLoginViewController.h; sourceTree = "<group>"; };
+		B5AE9F171CB3F871007ED036 /* SMLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMLoginViewController.m; sourceTree = "<group>"; };
 		DA89B2C5A66359C39708E48F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -215,6 +229,9 @@
 			isa = PBXGroup;
 			children = (
 				B58479A21CA8FA6C00C30FC9 /* CustomUIReadme.txt */,
+				B5476EB41CB5517600BCDBA9 /* SMStockTableViewCell.h */,
+				B5476EB51CB5517600BCDBA9 /* SMStockTableViewCell.m */,
+				B5476EB61CB5517600BCDBA9 /* SMStockTableViewCell.xib */,
 			);
 			path = CustomUI;
 			sourceTree = "<group>";
@@ -254,6 +271,12 @@
 		B58479D11CA8FA6C00C30FC9 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				B5AE9F161CB3F871007ED036 /* SMLoginViewController.h */,
+				B5AE9F171CB3F871007ED036 /* SMLoginViewController.m */,
+				B578B56D1CB4B4E000076E49 /* SMAcountsVC.h */,
+				B578B56E1CB4B4E000076E49 /* SMAcountsVC.m */,
+				B578B5701CB4B51300076E49 /* SMStockManagerVC.h */,
+				B578B5711CB4B51300076E49 /* SMStockManagerVC.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -327,6 +350,7 @@
 				TargetAttributes = {
 					B58479651CA8D3F700C30FC9 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 7779KFR2G9;
 					};
 					B584797E1CA8D3F700C30FC9 = {
 						CreatedOnToolsVersion = 7.3;
@@ -370,6 +394,7 @@
 				B58479EB1CA8FB3800C30FC9 /* Main.storyboard in Resources */,
 				B58479D41CA8FA6C00C30FC9 /* CustomUIReadme.txt in Resources */,
 				B58479D31CA8FA6C00C30FC9 /* CommonReadMe.txt in Resources */,
+				B5476EB81CB5517600BCDBA9 /* SMStockTableViewCell.xib in Resources */,
 				B58479761CA8D3F700C30FC9 /* Assets.xcassets in Resources */,
 				B58479EA1CA8FB3800C30FC9 /* LaunchScreen.storyboard in Resources */,
 			);
@@ -429,8 +454,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5476EB71CB5517600BCDBA9 /* SMStockTableViewCell.m in Sources */,
+				B578B56F1CB4B4E000076E49 /* SMAcountsVC.m in Sources */,
 				B584796E1CA8D3F700C30FC9 /* AppDelegate.m in Sources */,
+				B5AE9F181CB3F871007ED036 /* SMLoginViewController.m in Sources */,
 				B58479EE1CA8FD5600C30FC9 /* SMRootViewController.m in Sources */,
+				B578B5721CB4B51300076E49 /* SMStockManagerVC.m in Sources */,
 				B58479F11CA9007F00C30FC9 /* SMGlobalUnit.m in Sources */,
 				B584796B1CA8D3F700C30FC9 /* main.m in Sources */,
 			);
@@ -560,11 +589,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = StockManager/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/StockManager/General/Framework/umeng_ios_social_sdk_5.0_arm64_custom/UMSocial_Sdk_5.0",
-					"$(PROJECT_DIR)/StockManager/General/Framework/umeng_ios_social_sdk_5.0_arm64_custom/UMSocial_Sdk_Extra_Frameworks/Wechat",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = BenOC.StockManager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -578,11 +603,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = StockManager/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/StockManager/General/Framework/umeng_ios_social_sdk_5.0_arm64_custom/UMSocial_Sdk_5.0",
-					"$(PROJECT_DIR)/StockManager/General/Framework/umeng_ios_social_sdk_5.0_arm64_custom/UMSocial_Sdk_Extra_Frameworks/Wechat",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = BenOC.StockManager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

@@ -7,6 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <SVProgressHUD.h>
+#import "SMMecro.h"
 
 @interface SMGlobalUnit : NSObject
 

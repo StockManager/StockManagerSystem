@@ -17,11 +17,26 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    //设置返回键不显示内容
+    UIBarButtonItem *barItem = [[UIBarButtonItem alloc] initWithTitle:@"" style:(UIBarButtonItemStylePlain) target:nil action:nil];
+    [barItem setTintColor:[UIColor darkGrayColor]];
+    self.navigationItem.backBarButtonItem = barItem;
+    
+    //设置背景颜色 272636
+//    self.view.backgroundColor = [UIColor colorWithRed:27/255.0 green:26/255.0 blue:36/255.0 alpha:1];
+//    self.view.backgroundColor = [UIColor groupTableViewBackgroundColor];
+
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    [super touchesEnded:touches withEvent:event];
+    [self.view endEditing:YES];
 }
 
 /*
