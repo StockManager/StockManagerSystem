@@ -106,6 +106,7 @@
             if ([object isKindOfClass:[NSDictionary class]]) {
                 BOOL sucess = [object[@"success"]boolValue];
                 if (sucess) {
+                    [SVProgressHUD dismiss];
                     [self pushToMainVC];
                 }else{
                     [SVProgressHUD showErrorWithStatus:@"用户名或密码错误"];
@@ -126,18 +127,21 @@
 }
 
 - (void)pushToMainVC{
-    UITabBarController *tabBarVC = [[UITabBarController alloc]init];
+//    UITabBarController *tabBarVC = [[UITabBarController alloc]init];
+//    
+//    UIViewController *accountVC = [[UIStoryboard storyboardWithName:@"Main" bundle:nil]instantiateViewControllerWithIdentifier:@"SMAcountsVC"];
+//    accountVC.tabBarItem.title = @"账目";
+//    accountVC.tabBarItem.image = [UIImage imageNamed:@"sm_main_account"];
+//    
+//    UIViewController *stockVC = [[UIStoryboard storyboardWithName:@"Main" bundle:nil]instantiateViewControllerWithIdentifier:@"SMStockManagerVC"];
+//    stockVC.tabBarItem.title = @"库存";
+//    stockVC.tabBarItem.image = [UIImage imageNamed:@"sm_main_stock"];
+//    
+//    tabBarVC.viewControllers = @[accountVC,stockVC];
+//    [self.navigationController pushViewController:tabBarVC animated:YES];
     
-    UIViewController *accountVC = [[UIStoryboard storyboardWithName:@"Main" bundle:nil]instantiateViewControllerWithIdentifier:@"SMAcountsVC"];
-    accountVC.tabBarItem.title = @"账目";
-    accountVC.tabBarItem.image = [UIImage imageNamed:@"sm_main_account"];
-    
-    UIViewController *stockVC = [[UIStoryboard storyboardWithName:@"Main" bundle:nil]instantiateViewControllerWithIdentifier:@"SMStockManagerVC"];
-    stockVC.tabBarItem.title = @"库存";
-    stockVC.tabBarItem.image = [UIImage imageNamed:@"sm_main_stock"];
-    
-    tabBarVC.viewControllers = @[accountVC,stockVC];
-    [self.navigationController pushViewController:tabBarVC animated:YES];
+    UIViewController *targetVC = [[UIStoryboard storyboardWithName:@"Main" bundle:nil]instantiateViewControllerWithIdentifier:@"SMMainVC"];
+    [self.navigationController pushViewController:targetVC animated:YES];
     
 }
 

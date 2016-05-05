@@ -53,7 +53,8 @@
     //右边搜索按钮
     self.tabBarController.navigationItem.rightBarButtonItem = nil;
     UIBarButtonItem *searchButtonItem = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemSearch target:self action:@selector(searchAccount)];
-    self.tabBarController.navigationItem.rightBarButtonItem = searchButtonItem;
+//    self.tabBarController.navigationItem.rightBarButtonItem = searchButtonItem;
+    self.navigationItem.rightBarButtonItem = searchButtonItem;
 }
 
 - (void)searchAccount{
@@ -171,9 +172,14 @@
     if ([balance integerValue] < 0) {
         cell.detailTextLabel.textColor = [UIColor redColor];
     }else{
-        cell.detailTextLabel.textColor = [UIColor greenColor];
+        cell.detailTextLabel.textColor = [UIColor blackColor];
     }
-    cell.detailTextLabel.text = [balance stringValue];
+   
+    NSNumberFormatter *nFormatter = [[NSNumberFormatter alloc]init];
+    nFormatter.numberStyle = NSNumberFormatterDecimalStyle;
+    NSString *string = [nFormatter stringFromNumber:balance];
+    cell.detailTextLabel.text = string;
+    
 }
 
 #pragma mark - 搜索

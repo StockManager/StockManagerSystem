@@ -55,7 +55,8 @@ static NSString * const CellIdentifier = @"StockCellIndetifier";
     //右边搜索按钮
     self.tabBarController.navigationItem.rightBarButtonItem = nil;
     UIBarButtonItem *stockButtonItem = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemSearch target:self action:@selector(searchStock)];
-    self.tabBarController.navigationItem.rightBarButtonItem = stockButtonItem;
+//    self.tabBarController.navigationItem.rightBarButtonItem = stockButtonItem;
+    self.navigationItem.rightBarButtonItem = stockButtonItem;
 }
 
 - (void)searchStock{
